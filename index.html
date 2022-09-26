@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>La Conasupo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">	
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js'></script>	
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+.page_title {
+    padding: 30px 0px;
+}
+.page_title h1 {
+    color: #c0392b;
+    font-weight: 700;
+    line-height: 2;
+    margin-bottom: 0;
+    position: relative;
+    text-transform: capitalize;
+}
+.page_title h1::before {
+    background: #c0392b;
+    width: 70px;
+    height: 2px;
+    position: absolute;
+    content: '';
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.page_title h1::after {
+    position: absolute;
+    content: '';
+    background: #fbc531;
+    width: 30px;
+    height: 2px;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*Menu starts*/
+.menu_tab {
+    margin: 0 auto;
+    justify-content: center;
+}
+.nav-item {
+    display: inline-block;
+    text-align: center;
+}
+.nav-tabs .nav-link{
+    transition: .3s;
+}
+.nav-tabs .nav-link.active {
+    background: #c0392b;
+    color: #fff;
+    font-weight: 700;
+    border: 1px solid #c0392b;
+    text-transform: capitalize;
+}
+.nav-link {
+    color: #000;
+}
+.nav-tabs .nav-link:hover {
+    background: #c0392b;
+    color: #fff;
+    border: 1px solid #c0392b;
+}
+.single_menu {
+    position: relative;
+    margin-bottom: 75px;
+    transition: .3s;
+}
+.single_menu:hover img{
+    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+
+}
+.single_menu img {
+    width: 33%;
+    position: absolute;
+    height: 140px;
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    transition: .3s;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.menu_content h4 {
+    font-size: 25px;
+    font-weight: 300;
+    border-bottom: 1px dashed #c0392b;
+    line-height: 2;
+    text-transform: capitalize;
+}
+.menu_content h4 span {
+    font-size: 25px;
+    font-weight: 800;
+    float: right;
+    font-style: italic;
+    color: #c0392b;
+}
+.menu_content p {
+    font-weight: 200;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.menu_btn.btn.btn-danger {
+    margin: 0 auto;
+    display: block;
+    width: 140px;
+}
+/*Menu ends*/
+.menu_btn.btn.btn-danger {
+	margin: 0 auto;
+	display: block;
+	width: 140px;
+}
+.btn.btn-danger {
+	background: #c0392b;
+	border: 1px solid #c0392b;
+	transition: .3s;
+	position: relative;
+	z-index: 1;
+	text-transform: capitalize;
+	font-weight: 700;
+	overflow: hidden;
+	padding: 15px 25px;
+}
+.btn.btn-danger::before {
+	position: absolute;
+	content: '';
+	background: #e74c3c;
+	width: 100%;
+	height: 100%;
+	left: -100%;
+	top: 100%;
+	transition: .3s;
+	z-index: -1;
+}
+.btn.btn-danger:hover:before{
+    top: 0;
+    left: 0;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="index.html" class="w3-bar-item w3-button"><img class="w3-image" src="images/shoplabel1.jpg" alt="dishes" width="400" height="200"></a>
+	
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+    </div>
+	  
+	<div>
+   	<h1 style="text-align: center;">Call to Order</h1>
+	<h1 style="text-align: center;"><a href="tel:1206 782 0533">(206) 782-0533</a></h1>
+		<h1 style="text-align: center;"><span class="w3-tag w3-pink ">Free parking lot behind store</span></h1>
+  	</div>
+	  
+	 
+	  
+  </div>
+</div>
+<br><br><br><br><br><br>
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px">
+<img class="w3-image" src="images/LaConasupo-9657.jpg" alt="dishes" width="1600" height="800">
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64">
+    <div class="w3-col m6 w3-padding-large">
+     <img src="images/store.jpg" class="w3-round w3-image w3-opacity-min" alt="store" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center" id="about">About La Conasupo</h1><br>
+      <h2 class="w3-center">Our Mission</h2>
+     <p class="w3-large">La Conasupo offers authentic Mexican tacos, quesadillas and sopes. Make sure to try the house specialty, which is the lamb barbacoa and consomé (lamb soup). Everything is made fresh from scratch in our kitchen. Portions are very large and heavy on the meat. It’s a<span class="w3-tag w3-light-grey"> carnivore’s delight.</span></p>
+     
+ <p class="w3-large">Check out our Mexican snacks and groceries. You’ll find fruit waters, sodas and juices. Also sweet bread, candies, cakes, chips and nuts, all with a Latin flare. We also have specialty cheeses and creams, dried
+chilies, salsas and everything you might need to cook your favorite Latin dishes at home. And don’t forget to pick up a piñata for your next party.</p>
+<h2 class="w3-center">Our Vision</h2>
+<p class="w3-large">In our taqueria, enjoy authentic Mexican food just as if you were in Mexico. When you're finished eating, find
+all your favorite Latin-inspired snacks and groceries in our store.</p>
+    </div>
+  </div>
+  <hr>
+
+<!--Special Orders -->
+  <div class="w3-row w3-padding-64">
+	<div class="w3-col m6 w3-padding-large">
+     <img src="images/wholelamb.jpg" class="w3-round w3-image w3-opacity-min" alt="lamb" width="600" height="750">
+    </div>
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">For Your Celebrations and Special Events</h1>
+<p class="w3-xlarge">Order a deliciously prepared <span class="w3-tag w3-pink "> whole or half lamb</span> for your next celebration, and treat your guests to a special experience that brings them back to life in Mexico</p>
+    </div>
+  </div>
+  <hr>
+	
+	
+  <!-- Menu Section -->
+<h1 class="w3-center">Welcome to Our Restaurant</h1><br>
+<div class="w3-container w3-dark-grey w3-padding-32">
+  <h2 style="text-align: center;">Authentic Mexican food prepared fresh from scratch</h2> 
+  <h4 style="text-align: center;">Portion sizes are very large, and heavy on meat.</h4><br>
+    <div class="w3-row">
+      <div class="w3-container w3-half">
+        <h5 class="w3-bottombar w3-border-green">Basic meats for tacos, quesadillas & sopes</h5>
+       		 <ul>
+			<li>Carne Asada  =  	Skirt steak</li>
+			<li>Carnitas  	=	Pork meat with tripe</li>
+		</ul>
+      </div>
+      <div class="w3-container w3-half">
+        <h5 class="w3-bottombar w3-border-green">Premium meats options</h5>
+       		 <ul>
+			<li>Barbacoa =	lamb</li>
+        		<li>Lengua	=	tongue</li>
+        		<li>Cabeza	=	Beef cheeks</li>
+			<li>Chicharron	=	Pork rinds in red sauce</li>
+        		<li>Tinga de res	= Beef in spicy red sauce</li>
+			<li>Tinga de pollo	= Chicken in spicy red sauce </li>
+		</ul>
+      </div>
+      
+    </div>
+  </div>
+<div>
+  <section id="our_menu" class="pt-5 pb-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="page_title text-center mb-4">
+						<h1 id="menu">our menu</h1>
+						<div class="single_line"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<ul class="nav nav-tabs menu_tab mb-4" id="myTab" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" id="tacos-tab" data-toggle="tab" href="#tacos" role="tab">Tacos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="quesa-tab" data-toggle="tab" href="#quesa" role="tab">Quesadillas</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="sope-tab" data-toggle="tab" href="#sope" role="tab">Sopes</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="soup-tab" data-toggle="tab" href="#soup" role="tab">Soups</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="meat-tab" data-toggle="tab" href="#meat" role="tab">Meats</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="plate-tab" data-toggle="tab" href="#plate" role="tab">Small Plates</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="side-tab" data-toggle="tab" href="#side" role="tab">Sides</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="drink-tab" data-toggle="tab" href="#drink" role="tab">Drinks</a>
+					</li>
+				</ul>
+        	</div>
+<div class="row">
+	<div class="tab-content col-lg-12" id="myTabContent">
+<!--********************************************************************Tacos tab begins here************************************-->
+		<div class="tab-pane fade show active" id="tacos" role="tabpanel" aria-labelledby="tacos-tab">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="single_menu">
+						<img src="dishes/ct.jpeg" alt="tacos">
+						
+					</div>
+				</div>
+				<div class="col-md-4 w3-hide-small">
+					<div class="single_menu">
+						<img src="dishes/caat.jpg" alt="tacos">
+						
+					</div>
+				</div>
+				
+				<div class="col-md-4 w3-hide-small">
+					<div class="single_menu">
+						<img src="dishes/cat.jpeg" alt="tacos">
+						
+					</div>
+				</div>
+				
+			</div>
+			
+			<br><br><br>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="single_menu">
+							<p style="color:red;font-weight: bold;font-size: x-large;">Served on corn tortillas. Our tacos are huge. 1 of our tacos is the equivalent of 3 tacos at other places.</p>
+					<div class="menu_content">
+							<h4>One basic meat  <span>$5.99</span></h4>
+							<h4>One premium meat <span>$6.99</span></h4>
+							<h4>Mushroom / potato  <span>$5.99</span></h4>
+					
+						</div>
+				 	</div>
+				</div>
+			</div>
+			
+		</div>
+<!-- *********************************************Tacos tab ends here************************************************************ -->				
+<!--********************************************************************Quesadillas tab begins here************************************-->
+		<div class="tab-pane fade" id="quesa" role="tabpanel" aria-labelledby="quesa-tab">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="single_menu">
+						
+						<img src="dishes/cq.jpg" alt="chicharron quesadilla">
+					</div>
+				</div>
+				<div class="col-md-3 w3-hide-small">
+					<div class="single_menu">
+						<img src="dishes/btq.jpg" alt="beef tinga quesadilas ">
+						
+					</div>
+				</div>
+				
+				<div class="col-md-3 w3-hide-small">
+					<div class="single_menu">
+						<img src="dishes/qtp.jpg" alt="chicken tinga Quesadillas ">
+						
+					</div>
+				</div>
+				<div class="col-md-3 w3-hide-small">
+					<div class="single_menu">
+						<img src="dishes/mq.jpg" alt="mushroom quesadilla">
+						
+					</div>
+				</div>
+				
+			</div>
+			
+			<br><br><br>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="single_menu">
+							<p style="color:red;font-weight: bold;text-align: center;font-size: x-large;">Our quesadilas are big quesadillas on a 13 inch housemade corn tortilla.</p>
+					<div class="menu_content">
+							<h4>Cheese or requeson (Mexican ricotta)  <span>$11.99</span></h4>
+							<h4>Mushroom or potato <span>$11.99</span></h4>
+							<h4>One basic meat <span>$13.99</span></h4>
+							<h4>One premium meat <span>$14.99</span></h4>
+							<h4>Pork chops <span>$14.99</span></h4>
+							<h4>Steak <span>$15.99</span></h4>
+							<h4>Combination of 2 meats/veggies <span>$18.99</span></h4>
+					
+						</div>
+				 	</div>
+				</div>
+			</div>
+			
+		</div>
+<!-- *********************************************Quesadillas tab ends here************************************************************ -->	
+		
+<!--********************************************************************Sope tab begins here************************************-->
+		<div class="tab-pane fade" id="sope" role="tabpanel" aria-labelledby="sope-tab">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="single_menu">
+						<img src="dishes/spc.jpg" alt="sopes">
+					</div>
+				</div>
+				
+			</div>
+			
+			<br><br><br>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="single_menu">
+							<p style="color:red;font-weight: bold;text-align: center;font-size: x-large;"> Similar to a tostada, but thicker hand-made tortilla</p>
+							<p style="color:red;font-weight: bold;text-align: center;font-size: x-large;">Our sopés are big sopés on a 10 inch housemade corn tortilla.</p>
+					<div class="menu_content">
+							<h4>Basic<span>$10.99</span></h4>
+							<p>(refried black beans, lettuce & cotija cheese)</p>
+							<h4>Mushroom or potato<span>$11.99 </span></h4>
+							<h4>One basic meat <span>$13.99 </span></h4>
+							<h4>One premium meat <span>$14.99 </span></h4>
+							<h4>Pork chops <span>$14.99</span></h4>
+							<h4>Steak <span>$15.99</span></h4>
+							<h4>Combination of 2 meats/veggies <span>$15.99</span></h4>
+					
+						</div>
+				 	</div>
+				</div>
+			</div>
+			
+		</div>
+<!-- *********************************************Sope tab ends here************************************************************ -->
+		
+<!--********************************************************************Soup tab begins here************************************-->
+		<div class="tab-pane fade" id="soup" role="tabpanel" aria-labelledby="soup-tab">
+			<div class="row">
+				<div class="col-md-3 w3-hide-large">
+					<div class="single_menu">
+						<img src="dishes/consome.jpg"  alt="consome1">
+					</div>			
+				</div>
+			</div>
+<br><br><br>
+			<div class="row">
+				<div class="col-md-3 w3-hide-small">
+					<div class="single_menu" style="width: 250%;">
+						<img src="dishes/consome.jpg"  alt="consome1">
+					</div>
+				</div>
+				
+				<div class="col-md-9">
+					<div class="menu_content">
+						<h4>Consomé (lamb broth with garbanzos, onion, cilantro)  <span>$9.00</span></h4>
+					</div>
+				</div>
+				
+			</div>
+			<br><br><br>
+			<div class="row">
+				<div class="col-md-3 w3-hide-large">
+					<div class="single_menu">
+						<img src="dishes/menudo.jpg"  alt="menudo">	
+					</div>
+						<br><br><br>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-3 w3-hide-small">
+					<div class="single_menu" style="width: 250%;">
+					<img src="dishes/menudo.jpg"  alt="menudo">	
+					</div>
+					<br><br><br><br>
+				</div>
+				
+				<div class="col-md-9">
+					<div class="menu_content">
+					<h4>Menudo (only weekends) <span>$12.99</span></h4>	
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="row">
+				<div class="col-md-3 w3-hide-large">
+					<div class="single_menu">
+						<img src="dishes/consome.jpg"  alt="consome1">
+					</div>
+						<br><br><br>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 w3-hide-small">
+					<div class="single_menu" style="width: 250%;">
+						<img src="dishes/consome.jpg"  alt="consome2">
+					</div>
+				</div>
+				
+				<div class="col-md-9">
+					<div class="menu_content">
+						<h4>Consomé with lamb meat <span>$13.99</span></h4>
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+<!-- *********************************************Soup tab ends here************************************************************ -->	
+					
+<!--********************************************************************meat tab begins here************************************-->
+		<div class="tab-pane fade" id="meat" role="tabpanel" aria-labelledby="meat-tab">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="single_menu">
+						<img src="dishes/spc.jpg" alt="meat">
+					</div>
+				</div>
+				
+			</div>
+			
+			<br><br><br>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="single_menu">
+							<p style="color:red;font-weight: bold;text-align: center;font-size: x-large;"> Meat by the pound</p>
+					<div class="menu_content">
+							<h4>Carnitas <span>$16.00  </span></h4>
+							<h4>Barbacoa <span>$24.00 </span></h4>
+							<h4>Asada <span>$14.00</span></h4>
+							<h4>Chicken Tinga <span>$14.00 </span></h4>
+							<h4>Other meats <span>Inquire</span></h4>
+					
+						</div>
+				 	</div>
+				</div>
+			</div>
+			
+		</div>
+<!-- *********************************************meat tab ends here************************************************************ -->			
+		
+<!-- *********************************************plate tab begins here************************************************************ -->		
+	    <div class="tab-pane fade" id="plate" role="tabpanel" aria-labelledby="plate-tab">
+			<div class="row">
+				<div class="col-md-3 w3-hide-large">
+					<div class="single_menu">
+						<img src="dishes/cat.jpeg" alt="potato">
+					</div>			
+				</div>
+			</div>
+			<br><br><br>
+			<div class="row">
+				<div class="col-md-3 w3-hide-small">
+					<div class="single_menu" style="width: 250%;">
+						<img src="dishes/cat.jpeg" alt="potato">
+					</div>
+				</div>
+				
+				<div class="col-md-9">
+					<div class="menu_content">
+						<h4>Small deep-fried potato tacos   <span>$11.70</span></h4>
+					</div>
+				</div>
+				
+			</div>
+						</div>
+<!-- *********************************************plate tab ends here************************************************************ -->
+		
+<!--********************************************************************side tab begins here************************************-->
+		<div class="tab-pane fade" id="side" role="tabpanel" aria-labelledby="side-tab">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="single_menu">
+						<img src="dishes/mq.jpg" alt="side">
+					</div>
+				</div>
+				
+			</div>
+			
+			<br><br><br>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="single_menu">
+					<div class="menu_content">
+							<h4>Side Rice <span>$2.99  </span></h4>
+							<h4>Side Bean <span>$2.99 </span></h4>
+							<h4>Order Tortilla(6  unidad) <span>$1.00</span></h4>
+						</div>
+				 	</div>
+				</div>
+			</div>
+			
+		</div>
+<!-- *********************************************side tab ends here************************************************************ -->
+
+<!--********************************************************************drink tab begins here************************************-->
+		<div class="tab-pane fade" id="drink" role="tabpanel" aria-labelledby="drink-tab">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="single_menu">
+						<img src="dishes/fw.jpg" alt="drink">
+					</div>
+				</div>
+				
+			</div>
+			
+			<br><br><br>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="single_menu">
+					<div class="menu_content">
+							<h4>Mexican Fruit Water <span>$4.75 </span></h4>
+							<h4>Mexican Coke <span>$3.99 </span></h4>
+							<h4>Jarritos <span>$2.85 </span></h4>
+						</div>
+				 	</div>
+				</div>
+			</div>
+			
+		</div>
+<!-- *********************************************drink tab ends here************************************************************ -->			
+		
+	</div>	
+				<a href="#our_menu" class=" menu_btn btn btn-danger">Top</a>
+	 </div>
+	</div>
+</section>
+	</div>
+<h2 style="text-align: center;"><span class="w3-tag w3-pink ">Note: Prices are subject to change without notice</span></h2>
+  <hr>
+<div class="w3-row w3-padding-64">
+<div class="w3-col m6 w3-padding-large">
+     <img src="images/LaConasupo-9869.jpg" class="w3-round w3-image w3-opacity-min" alt="snack Shop" width="600" height="750">
+	 </div>
+	 <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Snack shop</h1><br>
+      <p class="w3-large">Check out our Mexican snacks and Groceries.You'll find fruit waters,sodas and juice.Also sweet bread,candies,chips and nuts,all with a latin flare we also have specialty cheeses and creams,dried chillies, salsas and everything you might need to cook your favorite Latin dishes at home. And don't forget to pick up a pinata for your next Party.</p>
+    </div>
+	</div>	
+
+<!-- End page content -->
+</div>
+<hr>
+
+  <div class="w3-container"style="font-family: Raleway;">
+    <h3>Event Announcements</h3>
+    <div class="w3-row">
+      <div class="w3-col m2 text-center">
+        <a href="https://www.phinneycenter.org/calendar/bite-of-phinneywood/" target="_blank"><img class="w3-circle" src="images/biteP.jpg" style="width:96px;height:96px"></a>
+      </div>
+      <div class="w3-col m10 w3-container">
+        <h4>Bite of Phinneywood  <span class="w3-opacity w3-medium"> on September 17, 2022</span></h4>
+        <p>We will be serving  <a href="dishes/qtp.jpg" target="_blank"><span class="w3-tag w3-green">our delicious chicken tinga tacos</span></a> at the Bite of Phinneywood. Get tickets <a href="https://www.phinneycenter.org/calendar/bite-of-phinneywood/" target="_blank"> here</a></p><br><br>
+      </div>
+    </div>
+
+    <div class="w3-row">
+      <div class="w3-col m2 text-center">
+        <a href="https://doveyswork.weebly.com/" target="_blank"><img class="w3-circle" src="images/doveys.jpg" style="width:96px;height:96px"></a>
+      </div>
+      <div class="w3-col m10 w3-container">
+        <h4>The Phinneywood Art Walk is back  <span class="w3-opacity w3-medium"> on September 23 & 24, 2022</span></h4>
+        <p>Come to <a href="index.html"><span class="w3-tag w3-green">La Conasupo</span></a> to see art from local Latin artists starting with Honduran artist Dovey Martinez. For more information on the event, click <a href="https://www.phinneycenter.org/artwalk/" target="_blank"> here</a></p>
+		<p>For more info on artist Dovey Martinez, click <a href="https://doveyswork.weebly.com/" target="_blank"> here</a></p><br>
+      </div>
+    </div>
+	<div class="w3-row">
+      <div class="w3-col m2 text-center">
+        <a href="https://www.phinneycenter.org/calendar/dia2022/" target="_blank"><img class="w3-circle" src="images/altar-web.jpg" style="width:96px;height:96px"></a>
+      </div>
+      <div class="w3-col m10 w3-container">
+        <h4>Phinneywood's traditional Mexican Day of the Dead  <span class="w3-opacity w3-medium"> on November 5, 2022</span></h4>
+        <p>Join us at Phinneywood's traditional Mexican Day of the Dead celebrationon November 5, 2022. <a href="index.html"><span class="w3-tag w3-green">La Conasupo</span></a>  will be selling some of our delicious Mexican dishes there. For more details, visit this <a href="https://www.phinneycenter.org/calendar/dia2022/" target="_blank">website</a></p><br>
+      </div>
+    </div>
+  </div>
+  <br>  
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+ <p><a href="story.html" title="bibliography" target="_blank" class="w3-hover-text-green">Our Story</a> | <a href="location.html" title="images" target="_blank" class="w3-hover-text-green">Locate Us Here</a></p>
+<h2 style="text-align: center;"><span class="w3-tag w3-pink ">Open Monday – Sunday from 9am to 8:30pm</span></h2>	
+<p>Designed by Jonathan Tsegai|Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a> |&copy;La Conasupo</p>
+</footer>
+
+</div>
+
+</body>
+</html>
